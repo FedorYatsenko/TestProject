@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>My Buys Main page</h1>
+
+    <p>Welcome to <em>My Buys</em>, my first Django project.</p>
+
+    <h2>Shock content</h2>
+
+    <p>My buys has the following record counts:</p>
+    <ul>
+        <li><strong>Users:</strong> {{ num_user }}</li>
+        <li><strong>Buys:</strong> {{ num_buys }}</li>
+    </ul>
+
+    <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+{% endblock %}

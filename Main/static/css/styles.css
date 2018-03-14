@@ -1,0 +1,19 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    font-size: x-large;
+    color: black;
+}
+
+.sidebar-nav li a {
+    font-size: large;
+    color: black;
+}
+
+body {
+    background-color: antiquewhite;
+}

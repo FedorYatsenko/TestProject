@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>User: {{ user.name }}</h1>
+
+  <p><strong>Email:</strong> {{ user.email }}</p>
+
+  <div style="margin-left:20px;margin-top:20px">
+    <h4>Buys:</h4>
+
+    {% for buy in user.buys_set.all %}
+    <hr>
+    <p><strong>Amount:</strong> {{buy.amount}}</p>
+    <p class="text-muted"><strong>Id:</strong> {{buy.id}}</p>
+    {% endfor %}
+  </div>
+{% endblock %}
